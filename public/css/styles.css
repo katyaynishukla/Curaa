@@ -1,0 +1,32 @@
+body {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.centered {
+	padding-top: 200px;
+	text-align: center;
+}
+
+.secret-text {
+	text-align: center;
+	font-size: 2rem;
+	color: #fff;
+	background-color: #000;
+}
+
+.navbar {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: 0;
+	border-radius: 0;
+	margin-bottom: 0;
+	font-size: 12px;
+	letter-spacing: 5px;
+}
+.navbar-nav li a:hover {
+	color: #1abc9c !important;
+}
+.navbar-header a:hover {
+	color: #1abc9c !important;
+}

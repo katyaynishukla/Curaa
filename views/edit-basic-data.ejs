@@ -1,0 +1,74 @@
+<!-- same and available for both -->
+
+<%- include('partials/header'); -%>
+
+<!-- make it just display rather than a input form -->
+<!-- make it input form for patient logging in for the first time an pop up to this page -->
+<!-- give option of editing data at last -->
+<!-- disable editing generally -->
+
+<h1>Edit Basic Details</h1>
+
+<form action="/edit-basic-data" method="post">
+	<div class="form-group">
+		<div class="form-group">
+			<label for="">Name</label>
+			<input
+				type="text"
+				class="form-control"
+				name="name"
+				id=""
+				autocomplete="off"
+			/>
+		</div>
+
+		<div class="form-group">
+			<label for="">Aadhar Number</label>
+			<input type="text" class="form-control" name="aadharNo" id="" />
+		</div>
+
+		<div class="form-group">
+			<label for="">Date of Birth</label>
+			<input type="text" class="form-control" name="dob" id="" />
+		</div>
+
+		<div class="form-group">
+			<label for="">Gender</label>
+			<input type="text" class="form-control" name="gender" id="" />
+		</div>
+
+		<div class="form-group">
+			<label for="">Contact Number</label>
+			<input type="number" class="form-control" name="contactNo" id="" />
+		</div>
+
+		<div class="form-group">
+			<label for="">Email Address</label>
+			<input type="email" class="form-control" name="email" id="" />
+		</div>
+
+		<div class="form-group">
+			<label for="">Blood Group</label>
+			<input type="text" class="form-control" name="bloodGroup" id="" />
+		</div>
+
+		<div class="form-group">
+			<label for="">Height (in cm)</label>
+			<input type="number" class="form-control" name="height" id="" />
+		</div>
+
+		<div class="form-group">
+			<label for="">Weight (in kg)</label>
+			<input type="number" class="form-control" name="weight" id="" />
+		</div>
+
+		<div class="form-group">
+			<label for="">Health Condition</label>
+			<input type="text" class="form-control" name="healthCondition" id="" />	
+		</div>
+
+		<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+<%- include('partials/footer'); -%>

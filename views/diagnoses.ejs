@@ -1,0 +1,69 @@
+<!-- same and available for both -->
+
+<%- include('partials/header'); -%>
+
+<h1><%= diagnose.date %></h1>
+<form class="form-horizontal">
+	<div class="form-group">
+		<h5 class="col-sm-2" for=""><strong>Patient Name</strong></h5>
+		<div class="col-sm-10">
+			<p class="form-control-static"><%= foundUser.name %></p>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<h5 class="col-sm-2" for=""><strong>Aadhar Number</strong></h5>
+		<div class="col-sm-10">
+			<p class="form-control-static"><%= foundUser.aadharNo %></p>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<h5 class="col-sm-2" for=""><strong>Date of Birth</strong></h5>
+		<div class="col-sm-10">
+			<p class="form-control-static"><%= foundUser.dob %></p>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<h5 class="col-sm-2" for=""><strong>Gender</strong></h5>
+		<div class="col-sm-10">
+			<p class="form-control-static"><%= foundUser.gender %></p>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<h5 class="col-sm-2" for=""><strong>Disease Information</strong></h5>
+		<div class="col-sm-10">
+			<p class="form-control-static"><%= diagnose.diseaseInfo %></p>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<h5 class="col-sm-2" for=""><strong>Prescribed Medicine</strong></h5>
+		<div class="col-sm-10">
+			<p class="form-control-static"><%= diagnose.medicine %></p>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<h5 class="col-sm-2" for=""><strong>Remark</strong></h5>
+		<div class="col-sm-10">
+			<p class="form-control-static"><%= diagnose.remark %></p>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<h5 class="col-sm-2" for=""><strong>Doctor name</strong></h5>
+		<div class="col-sm-10">
+			<p class="form-control-static"><%= diagnose.docName %></p>
+		</div>
+	</div>
+
+	<!-- display uploaded files -->
+	<!-- diagnosed by - doctor name which is a link which take to about page for doctor -->
+
+	<a href="#" class="btn btn-primary" onclick="window.print()">Print Report</a>
+</form>
+
+<%- include('partials/footer'); -%>

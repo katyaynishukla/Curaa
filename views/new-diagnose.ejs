@@ -1,0 +1,42 @@
+<!-- doctor only -->
+
+<%- include('partials/header'); -%>
+
+<h1>New Diagnose</h1>
+
+<form action="/new-diagnose" method="post">
+	<div class="form-group">
+		<label for="">Date</label>
+        <!-- get it from current date on computer -->
+		<input type="text" class="form-control" name="date" id="" autofocus autocomplete="off"/>
+	</div>
+
+	<div class="form-group">
+		<label for="">Disease Information</label>
+		<input type="text" class="form-control" name="diseaseInfo" id=""/>
+	</div>
+
+	<div class="form-group">
+		<label for="">Name of Doctor</label> 
+        <!-- make it autofill after adding login credentials -->
+		<input type="text" class="form-control" name="docName" id=""/>
+	</div>
+
+	<div class="form-group">
+		<label for="">Prescribed Medicine</label>
+		<input type="text" class="form-control" name="medicine" id=""/>
+	</div>
+
+	<div class="form-group">
+		<label for="">Remark</label>
+		<input type="text" class="form-control" name="remark" id=""/>
+	</div>
+
+    <!-- upolad related files option input -->
+
+	<button type="submit" class="btn btn-primary">Submit</button>
+
+    <!-- diagnose by doctor name and page about doctor link -->
+</form>
+
+<%- include('partials/footer'); -%>

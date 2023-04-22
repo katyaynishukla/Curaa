@@ -1,0 +1,28 @@
+<!-- different and available for doctor and patient -->
+
+<%- include('partials/header'); -%>
+
+<h1>Enter Patient Detail</h1>
+
+<form action="/login" method="post">
+	<div class="form-group">
+		<label for="text">Aadhar Number</label>
+		<input
+			type="text"
+			class="form-control"
+			name="username"
+			placeholder="Enter Aadhar Number"
+			autofocus
+			style="width: 200px"
+		/>
+	</div>
+	<% if(role==='doctor'){ %>
+	<div class="form-group" hidden>
+		<label for="password">Password</label>
+		<input type="password" class="form-control" value="hehe" name="password" />
+	</div>
+	<% } %>
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<%- include('partials/footer'); -%>
